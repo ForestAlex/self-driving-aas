@@ -1,7 +1,7 @@
 # self-driving-aas
 A protocol for the self-driving lab hackathon at EPFL &amp; University of Zurich on non-canonical amino acids and in-vitro translation systems.
 
-- [X] We use the NEB $\Delta$aa, tRNA _in-vitro_ translation kit. (2x kit)
+- [X] We use the NEB Δaa, tRNA _in-vitro_ translation kit. (2x kit)
 
 - [X] We use our IF1-mNeonGreen fluorescent protein plasmid (which was tested by hand before).
   
