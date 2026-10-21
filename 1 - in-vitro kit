@@ -1,0 +1,28 @@
+# 1 - In-vitro kit considerations and preparations
+
+We use the ΔtRNA, aa NEB _in-vitro_ translation kit (# E6840S, https://www.neb.com/de-de/products/e6840-purexpress-aa-trna-kit) and have **2 kits** available. 
+
+**Composition of the kit**
+
+- 25 µl Solution A       (#B6841A) 
+- **75 µl Solution B**   (#P0760)   ➜ limiting factor, so we have a total of **150 µl** available
+- 25 µl tRNAs            (#N6842A)
+- 25 µl amino acid mix   (#N6843A)       
+
+
+Typically, I use 12.5 µl but we can scale down to 10 µl. This is what is necessary for one reaction:
+
+**Required for one minimal reaction (10 µl)**
+
+- [X] 1 µl aa-mix (at 100 mM)
+- [X] 1 µl 
+- [X]
+- [X]
+- [X]
+- [X]
+
+----------------
+  total: 10 µl
+
+
+This should be put into a black 384 well plate (for later fluorescence).
