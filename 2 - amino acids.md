@@ -1,0 +1,16 @@
+# 2 - Amino Acids
+
+We test the amino acids from a personalized MedChemExpress library. There include tyrosine, tryptophan, phenylalanine, histidine, proline and phenylglycine derivatives. We prepare six **Δaa** (only 19 amino acid) mixtures:
+
+**Preparation**: 
+- [X] All amino acids in single solutions at 100 mM. (e.g. if M = 157.14 g/mol then 10 ml with 157.14 mg.)
+- [X] One **+ positive control** with all 20x amino acids (each 0.5 ml per 20 aas = total 10 ml).
+- [X] **-F** 19 aa Δphenylalanine with only _19x_ amino acids and no phenylalanine (each 0.5 ml per 19 aas + 0.5 ml MilliQ water = total 10 ml).
+- [X] **-H** 19 aa Δhistidine with only _19x_ amino acids and no histidine (each 0.5 ml per 19 aas + 0.5 ml MilliQ water = total 10 ml).
+- [X] **-I** 19 aa Δisoleucine with only _19x_ amino acids and no isoleucine (each 0.5 ml per 19 aas + 0.5 ml MilliQ water = total 10 ml).
+- [X] **-Y** 19 aa Δtyrosine with only _19x_ amino acids and no tyrosine (each 0.5 ml per 19 aas + 0.5 ml MilliQ water = total 10 ml).
+- [X] **-W** 19 aa Δtryptophan with only _19x_ amino acids and no tryptophan (each 0.5 ml per 19 aas + 0.5 ml MilliQ water = total 10 ml).
+
+The amino acids tested are available in the Excel sheet attached.
+
+
