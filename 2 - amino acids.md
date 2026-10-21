@@ -1,6 +1,18 @@
 # 2 - Amino Acids
 
-We test the amino acids from a personalized MedChemExpress library. There include tyrosine, tryptophan, phenylalanine, histidine, proline and phenylglycine derivatives. We prepare six **Δaa** (only 19 amino acid) mixtures:
+We test the amino acids from a personalized MedChemExpress library. We got 10 mg of each compound. There include tyrosine, tryptophan, phenylalanine, histidine, proline and phenylglycine derivatives. 
+
+We dilute them to a concentration of 25 mM:
+- [X] spin down
+- [X] add respective MilliQ water as in Excel (~ max. 0.1 mM HCl)
+- [X] incubate at room temperature for 10 min.
+- [X] vortex or mix
+- [X] ultrasound
+- [X] spin down
+- [X] pipet 10 µl into the storage plate for the robot  
+
+
+We prepare six **Δaa** (only 19 amino acid) mixtures:
 
 **Preparation**: 
 - [X] All amino acids in single solutions at 100 mM. (e.g. if M = 157.14 g/mol then 10 ml with 157.14 mg.)
