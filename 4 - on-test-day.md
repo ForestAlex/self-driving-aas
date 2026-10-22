@@ -42,7 +42,7 @@ Into a black 384-well plate:
 
 - [X] 1 positive control: **1 µl +aa control** + **2 µl MilliQ water** + *7 µl MM*
 - [X] 5 negative controls: **1 µl -aa (only 19 aa solution)** + **2 µl MilliQ water** + *7 µl MM*
-- [X] 34 amino acid reactions:
+- [X] 34 amino acid reactions are prepared in the 384-well plate at specific positions (library layout from company):
   - [X] 4x histidine derivatives (A11, C8, E6, G6)
   - [X] 4x tyrosine derivatives (A2, B5, D6, _F10_) 
   - [X] 6x tryptophan derivatives (C6, C9, E4, F4, H10)
@@ -54,7 +54,7 @@ Into a black 384-well plate:
   - [X] 2x harder tyrosine derivates (C10, H2)
   - [X] 2x harder isoleucine derivates (A2.2, A6) _Note: A2.2 means that it came from the second plate._
      
-It should pipet for each:  **1 µl RESPECTIVE -aa (only 19 aa solution)** + **2 µl aa-solution (e.g. a-A11)** + *7 µl MM*
+It should pipet to each prepared **2 µl aa-solution (e.g. a-A11)** a volume of: **1 µl RESPECTIVE -aa (only 19 aa solution)** + *7 µl MM*
 
 Then the experiment begins with platereader observations: 
 - [X] The robot puts onto heater-shaker and 37°C.
