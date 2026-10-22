@@ -40,7 +40,7 @@ The amino acids tested are available in the Excel sheet attached.
 
 Phenylalanine first round: A3, A9, A10, D2, H3, H8, G2
 
-Others: B3, B9, B10, C3, C11, D3, E7, **E9**, E11, H5, H7, H9, **F7**, G4, **G7**
+Others: B3, B9, B10, C3, C11, D3, E7, **E9**, E11, H5, H7, H9, **F7**, G4, **G7** color: #4C8482
 
 **Control positions:**
 
