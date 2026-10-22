@@ -51,7 +51,8 @@
 ## Real protocol constructed
 - [ ] Add the custom reservoirs.
 - [ ] Add the heater-shaker adapters.
-- [ ] Add the custom 384-well plate (_Note:_ This was not possible due to the heater-shaker adapter so I am using the 384-well Corning Falcon 384 Well Microtest Plate 130 µL as alternative.)
+- [ ] Add the custom 384-well plate (_Note:_ This was not possible due to the heater-shaker adapter so I am using the 384-well Corning Falcon 384 Well Microtest Plate 130 µL as alternative.) This includes the amino acid mixtures and water for the controls.
+- [ ] 
 - [ ] Step 1: Start with the heater-shaker. Pause until it reaches 37°C.
 - [ ] Step 2: The robot continues automatically. It should transfer the amino acid master mixes first.
 - [ ] Step 3: The robot transfers the single amino acids.
@@ -60,7 +61,7 @@
 **Run the protocol on the simulation apps**
 - [ ] Download the protocol.
 - [ ] Create a `conda` environment: `conda create --name self-driving-aas_env --clone base`
-- [ ] 
+- [ ] `conda activate self-driving-aas_env`
 
 ## TODO
 - [ ] get the 20 standard amino acids as solutions from Tübingen
