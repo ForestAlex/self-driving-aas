@@ -2,7 +2,7 @@
 
 ### 1) A master mix of the _in-vitro_ translation kit
 
-Prepare a 50x MM (= master mix, see bottom recipe) of the _in-vitro_ translation components **on ice**. This is then supplied to the robot (as the last thing, keep it cold as long as possible). It will use 40x of the MM in the first round:
+Prepare a 50x MM (= master mix, see bottom recipe) of the _in-vitro_ translation components **on ice**. Prepare this in an eppi and then distribute 2x 180 µl into wells A1 and A2 of a _Sarstedt 96 Well Plate 390 µL flatBottom_. This is then supplied to the robot (as the last thing, keep it cold as long as possible). In the first round, the robot will use up 40x of the MM which equals:
 
 **40x MM**
 - [ ] 120 µl Sol. B
