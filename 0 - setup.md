@@ -82,7 +82,7 @@ These are the functions as unit tests:
 
 with the function:
 
-```def validate(rows, num=4):
+`def validate(rows, num=4):
 
     # e.g. makes from the test the: phenyl_candidates = {'A3': '2500', 'A9': '35', 'A10': 'OVER', 'D2': '0', 'G2': '1200', 'G8': '40'}
     # then creates from OVER: phenyl_candidates = phenyl_candidates
@@ -114,7 +114,7 @@ with the function:
     except:
         optimization_picks = ["A9", "H3", "G2"]
 
-    return optimization_picks```
+    return optimization_picks`
 
 **Run the protocol on the simulation apps**
 - [ ] Download the protocol.
