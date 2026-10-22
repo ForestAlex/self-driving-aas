@@ -112,7 +112,7 @@ with the function:
 
     # in case there is any error, we still want to collect some insights
     except:
-        optimization_picks = ["A9", "H3", "G2"]
+        optimization_picks = ["A9", "H3", "G2", "G8"]
 
     return optimization_picks`
 
