@@ -73,7 +73,7 @@ Depending on the final fluorescence readout, perhaps the phenylalanine synthetas
 - [ ] Prepare a **10x MM** solution and give it to the robot.
 - [X] The robot adds **7 µ MM** to 10 wells.
 - [X] The robot adds **1 µ -Tyr solution** to the 10 wells. 
-- [X] Let the robot choose **6** from the following list `np.random`: A9, B3, B9, B10, C3, C11, H5, H7, H9, E7, F7, **E9, G7, F7**, G4, D3, E11
+- [X] Let the robot choose **6** from the following list `np.random`: A9, B3, B9, B10, C3, C11, D3, E7, **E9**, E11, H5, H7, H9, **F7**, G4, **G7**
   - [X] The robot pipets **2 µl** of this to the solution.
 - [X] Let the robot choose the **3** from the .csv file which are phenylalanine but lowest light.
   - [X] The robot pipets **2 µl** of this to the solution.
