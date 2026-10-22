@@ -59,12 +59,12 @@ It should pipet to each prepared **2 µl aa-solution (e.g. a-A11)** a volume of:
 Then the experiment begins with platereader observations: 
 - [X] The robot puts onto heater-shaker and 37°C.
 - [ ] 0 h PAUSE:
-  - [ ] Task 1 at 0 h: Add lid. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100). Add lid. Add plate back to heater-shaker.
+  - [ ] Task 1 at 0 h: Add lid. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100) **always in the top corner with rows A-I (include I please!) and columns 1-12**. Then add lid. Add plate back to heater-shaker.
   - [ ] Task 2 at 0 h: Remove the remaining **50x MM** (there should be now ~70 µl left) and put on **ice** for the next round or **-80°C**. 
-- [ ] 1 h PAUSE: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100). Add lid. Add plate back to heater-shaker.
-- [ ] 2 h PAUSE: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100). Add lid. Add plate back to heater-shaker.
-- [ ] 3 h PAUSE: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100). Add lid. Add plate back to heater-shaker.
-- [ ] 4 h FINAL: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100). Add lid. **Put plate to 4°C or -20°C for post-analysis of wavelength scans and SDS PAGE gels.**
+- [ ] 1 h PAUSE: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100) from A1-I12. Add lid. Add plate back to heater-shaker.
+- [ ] 2 h PAUSE: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100) from A1-I12. Add lid. Add plate back to heater-shaker.
+- [ ] 3 h PAUSE: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100) from A1-I12. Add lid. Add plate back to heater-shaker.
+- [ ] 4 h FINAL: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100) from A1-I12. Add lid. **Put plate to 4°C or -20°C for post-analysis of wavelength scans and SDS PAGE gels.**
 
 ### 5) Robot pipetting: Round 2
 
@@ -82,11 +82,11 @@ Depending on the final fluorescence readout, perhaps the phenylalanine synthetas
 
 Then the experiment begins with platereader observations (exactly as above): 
 - [X] The robot puts onto heater-shaker and 37°C.
-- [ ] 0 h PAUSE: Add lid. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100). Add lid. Add plate back to heater-shaker.
+- [ ] 0 h PAUSE: Add lid. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100) from A1-I12. Add lid. Add plate back to heater-shaker.
 - [ ] 1 h PAUSE: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100). Add lid. Add plate back to heater-shaker.
-- [ ] 2 h PAUSE: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100). Add lid. Add plate back to heater-shaker.
-- [ ] 3 h PAUSE: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100). Add lid. Add plate back to heater-shaker.
-- [ ] 4 h FINAL: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100). Add lid. **Put plate to 4°C or -20°C for post-analysis of wavelength scans and SDS PAGE gels.**
+- [ ] 2 h PAUSE: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100) from A1-I12. Add lid. Add plate back to heater-shaker.
+- [ ] 3 h PAUSE: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100) from A1-I12. Add lid. Add plate back to heater-shaker.
+- [ ] 4 h FINAL: Remove from heater-shaker. Remove lid. Measure fluorescence with plate reader (440 nm EXC, 500 nm EM, gain 100) from A1-I12. Add lid. **Put plate to 4°C or -20°C for post-analysis of wavelength scans and SDS PAGE gels.**
 - [ ]   
 
 **10x MM**
