@@ -29,7 +29,7 @@ The amino acids tested are available in the Excel sheet attached.
 
 - [X] 4x histidine derivatives (A11, C8, E6, G6)
   - [X] 4x tyrosine derivatives (A2, B5, D6, _F10_) 
-  - [X] 6x tryptophan derivatives (C6, C9, E4, F4, H10)
+  - [X] 6x tryptophan derivatives (C6, C9, D11, E4, F4, H10)
   - [X] 7x phenylalanine derivatives (**1xF:** A10/D2 **2xF**: A3/H8)
     - [X] of which are similar to tyrosine: A9, H3
     - [X] of which are hydrophobic: G2 
