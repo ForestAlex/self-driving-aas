@@ -70,7 +70,7 @@ Then the experiment begins with platereader observations:
 
 Depending on the final fluorescence readout, perhaps the phenylalanine synthetase was not the best. We read in the .csv from the **4 h** final readout and repeat for the **4 phenylalanine derivates** a test with the **-Tyr** solution. We also motivate the robot to gamble :) For the **6** remaining spots, it is allowed to choose whatever amino acid it likes from the list of phenylalanine derivates not yet tried.
 
-- [ ] Load in the .csv file.
+- [ ] Load in the .csv file which contains the **4 h A1-F12 fluorescence**.
 - [ ] Take manually a second 384-well black plate (to store the other at 4°C or -20°C).
 - [ ] Pipet the remaining **10x MM** solution into 10 wells (A1-A10 each **7 µl**) and give it to the robot. _Note: This is manually necessary due to the aspiration height to not loose the volume._
 - [X] The robot adds **7 µ MM** to 10 wells.
