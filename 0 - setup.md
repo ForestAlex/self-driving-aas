@@ -1,5 +1,6 @@
 # Setup of the protocols submitted prior to the hackathon
 
+## Tests in the meeting
 - [ ] Go to [ot2.designer.opentrons.com]
 - [ ] Start a new **OT2** protocol.
   - [ ] Select 0.5-10 µl pipet (= small volumes). Note: This is _GEN2_.
@@ -47,8 +48,19 @@
 - [ ] Note: Use `RuntimeParameter`.
 - [ ] Note: The _.csv_ will be supplied by the plate reader.
 
+## Real protocol constructed
+- [ ] Add the custom reservoirs.
+- [ ] Add the heater-shaker adapters.
+- [ ] Add the custom 384-well plate (_Note:_ This was not possible due to the heater-shaker adapter so I am using the 384-well Corning Falcon 384 Well Microtest Plate 130 µL as alternative.)
+- [ ] Step 1: Start with the heater-shaker. Pause until it reaches 37°C.
+- [ ] Step 2: The robot continues automatically. It should transfer the amino acid master mixes first.
+- [ ] Step 3: The robot transfers the single amino acids.
+- [ ] Step 4: The robot transfers the _in-vitro translation_ master mix.
+
 **Run the protocol on the simulation apps**
 - [ ] Download the protocol.
+- [ ] Create a `conda` environment: `conda create --name self-driving-aas_env --clone base`
+- [ ] 
 
 ## TODO
 - [ ] get the 20 standard amino acids as solutions from Tübingen
