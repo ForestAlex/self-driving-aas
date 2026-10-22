@@ -27,16 +27,26 @@ The amino acids tested are available in the Excel sheet attached.
 
 **Amino acids to test:**
 
-- [X] 4x histidine derivatives (A11, C8, E6, G6)
-- [X] 4x tyrosine derivatives (A2, B5, D6, _F10_) 
-- [X] 6x tryptophan derivatives (C6, C9, D11, E4, F4, H10)
-- [X] 7x phenylalanine derivatives (**1xF:** A10/D2 **2xF**: A3/H8)
+- [X] 4x histidine derivatives (A11, C8, E6, G6) color: #EEDAF8
+- [X] 4x tyrosine derivatives (A2, B5, D6, _F10_) color: #F9D5B4
+- [X] 6x tryptophan derivatives (C6, C9, D11, E4, F4, H10) color: #99B59C
+- [X] 7x phenylalanine derivatives (**1xF:** A10/D2 **2xF**: A3/H8) color: #B2F4F2
   - [X] of which are similar to tyrosine: A9, H3
   - [X] of which are hydrophobic: G2 
-- [X] 7x isoleucine derivatives (phenylglycine form: **F8**, A5, B4, C2, G3, **G9**)  
-- [X] 2x harder tryptophan derivatives (B6, D9)
-- [X] 2x harder tyrosine derivates (C10, H2)
-- [X] 2x harder isoleucine derivates (A2.2, A6)
+- [X] 7x isoleucine derivatives (phenylglycine form: A5, B4, C2, **F8**, G3, **G9**, G10) #E0D7A7
+- [X] 2x harder tryptophan derivatives (B6, D9) color: #5D8261
+- [X] 2x harder tyrosine derivates (C10, H2) color: #DE9555
+- [X] 2x harder isoleucine derivates (A2.2 = I1, A6) color: #AEA15D
 
-Others: A9, B3, B9, B10, C3, C11, D3, E7, **E9**, E11, H5, H7, H9, **F7**, G4, **G7**
+Phenylalanine first round: A3, A9, A10, D2, H3, H8, G2
 
+Others: B3, B9, B10, C3, C11, D3, E7, **E9**, E11, H5, H7, H9, **F7**, G4, **G7**
+
+**Control positions:**
+
+- [X] The positive control will go to A1.
+- [X] The -F control goes to B1.
+- [X] The -H control goes to C1.
+- [X] The -I control goes to D1.
+- [X] The -W control goes to E1.
+- [X] The -Y control goes to F1.   
