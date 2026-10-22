@@ -28,15 +28,15 @@ The amino acids tested are available in the Excel sheet attached.
 **Amino acids to test:**
 
 - [X] 4x histidine derivatives (A11, C8, E6, G6)
-  - [X] 4x tyrosine derivatives (A2, B5, D6, _F10_) 
-  - [X] 6x tryptophan derivatives (C6, C9, D11, E4, F4, H10)
-  - [X] 7x phenylalanine derivatives (**1xF:** A10/D2 **2xF**: A3/H8)
-    - [X] of which are similar to tyrosine: A9, H3
-    - [X] of which are hydrophobic: G2 
-  - [X] 7x isoleucine derivatives (phenylglycine form: **F8**, A5, B4, C2, G3, **G9**)  
-  - [X] 2x harder tryptophan derivatives (B6, D9)
-  - [X] 2x harder tyrosine derivates (C10, H2)
-  - [X] 2x harder isoleucine derivates (A2.2, A6)
+- [X] 4x tyrosine derivatives (A2, B5, D6, _F10_) 
+- [X] 6x tryptophan derivatives (C6, C9, D11, E4, F4, H10)
+- [X] 7x phenylalanine derivatives (**1xF:** A10/D2 **2xF**: A3/H8)
+  - [X] of which are similar to tyrosine: A9, H3
+  - [X] of which are hydrophobic: G2 
+- [X] 7x isoleucine derivatives (phenylglycine form: **F8**, A5, B4, C2, G3, **G9**)  
+- [X] 2x harder tryptophan derivatives (B6, D9)
+- [X] 2x harder tyrosine derivates (C10, H2)
+- [X] 2x harder isoleucine derivates (A2.2, A6)
 
 Others: A9, B3, B9, B10, C3, C11, D3, E7, **E9**, E11, H5, H7, H9, **F7**, G4, **G7**
 
