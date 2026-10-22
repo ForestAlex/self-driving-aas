@@ -28,7 +28,7 @@ Note: The water please has to be MilliQ water or sterile.
 - [ ] **-Trp (W solution):** 0.5 ml of A, C, D, E, F, G, **H**, **I**, K, L, M, N, P, Q, R, S, T, V, **water**, **Y**
 - [ ] **-Tyr (Y solution):** 0.5 ml of A, C, D, E, F, G, **H**, **I**, K, L, M, N, P, Q, R, S, T, V, **W**, **water**
 
-Note: We add 1 µl of 100 mM amino acid mix to each reaction typically (= per amino acid 5 mM). For the experiments we add the non-standard amino acid in 5x excess due to typically lower incorporation rates. A 25 mM solution is often well soluble with slight acidic conditions and ultrasound.
+Note: We add 1 µl of 100 mM amino acid mix to each reaction typically (= per amino acid 5 mM). For the experiments we add the non-standard amino acid in 10x excess due to typically lower incorporation rates. A 25 mM solution is often well soluble with slight acidic conditions and ultrasound.
 
 ### 3) Amino acids
 
@@ -54,7 +54,7 @@ Into a black 384-well plate:
   - [X] 2x harder tyrosine derivates (C10, H2)
   - [X] 2x harder isoleucine derivates (A2.2, A6) _Note: A2.2 means that it came from the second plate._
      
-It should pipet for each:  **1 µl RESPECTIVE -aa (only 19 aa solution)** + **2 µl MilliQ water** + *7 µl MM*
+It should pipet for each:  **1 µl RESPECTIVE -aa (only 19 aa solution)** + **2 µl aa-solution (e.g. a-A11)** + *7 µl MM*
 
 Then the experiment begins with platereader observations: 
 - [X] The robot puts onto heater-shaker and 37°C.
@@ -74,7 +74,7 @@ Depending on the final fluorescence readout, perhaps the phenylalanine synthetas
 - [X] The robot adds **7 µ MM** to 10 wells.
 - [X] The robot adds **1 µ -Tyr solution** to the 10 wells. 
 - [X] Let the robot choose **6** from the following list `np.random`: A9, B3, B9, B10, C3, C11, H5, H7, H9, E7, F7, **E9, G7, F7**, G4, D3, E11
-  - [X] The robot pipets **1 µl** of this to the solution.
+  - [X] The robot pipets **2 µl** of this to the solution.
 - [X] Let the robot choose the **3** from the .csv file which are phenylalanine but lowest light.
   - [X] The robot pipets **2 µl** of this to the solution.
 
