@@ -66,7 +66,7 @@ def validate(rows, lowest=4):
             raise ValueError(f"Unexpected header {columns}, expected {EXPECTED_HEADER}")
         errors, parsed = [], []
     except:
-        errors, parsed = "Cannot read csv header (perhaps UTF problem).", []
+        errors, parsed = "Cannot read csv header (perhaps encoding problem).", []
 
     # second try except to see if my logical code works well (e.g. if the plate reader gives out something like "UNDER" we would fail)
     try:
