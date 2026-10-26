@@ -59,22 +59,28 @@ def load_rows(protocol):
 
 def validate(rows, lowest=4):
 
-    columns = [c.strip() for c in rows[0]]   
-    if columns != EXPECTED_HEADER:
-        raise ValueError(f"Unexpected header {columns}, expected {EXPECTED_HEADER}")
-    errors, parsed = [], []
+    # first try except to see what the header reading works like
+    try:
+        columns = [c.strip() for c in rows[0]]   
+        if columns != EXPECTED_HEADER:
+            raise ValueError(f"Unexpected header {columns}, expected {EXPECTED_HEADER}")
+        errors, parsed = [], []
+    except:
+        errors, parsed = "Cannot read csv header (perhaps UTF problem).", []
 
+    # second try except to see if my logical code works well (e.g. if the plate reader gives out something like "UNDER" we would fail)
     try:
 
         phenyl_groundtruth = {"B1": rows[2][1]}
 
         phenyl_candidates = {"A3": rows[1][3], "A9": rows[1][9], "A10": rows[1][10],
-                             "D2": rows[5][2],
-                             "G2": rows[8][2], "G8": rows[8][8]}
+                             "D2": rows[4][2],
+                             "G2": rows[7][2],
+                             "H3": rows[8][3], "H8": rows[8][8]}
 
-        # e.g. makes from the test the: phenyl_candidates = {'A3': '2500', 'A9': '35', 'A10': 'OVER', 'D2': '0', 'G2': '1200', 'G8': '40'}
+        # e.g. makes from the test the: phenyl_candidates = {'A3': 2500, 'A9': 35, 'A10': 100000, 'D2': 2500, 'G2': 5000, 'H3': 4900, 'H8': 40}
         # then creates from OVER: phenyl_candidates = phenyl_candidates
-        # and chooses: ['D2', 'A9', 'G8', 'G2']
+        # and chooses: ['A9', 'H8', 'A3', 'D2']
     
         
         # choose the wells to pick with lowest fluorescence, to try and optimize/crosstest for tyrosine
@@ -104,13 +110,26 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
     # random selection: a gambling robot #
     ######################################
     selection = ["B3", "B9", "B10", "C3", "C11", "D3", "E7", "E9", "E11", "F7", "G4", "G7", "H5", "H7", "H9"]
+    np.random.seed(2001)
     random_picks = np.random.choice(selection, 6, replace=False)   # pick 6  
     random_picks = [str(well) for well in random_picks]            # Opentron likes strings it seems :)   
+
+    # third try to test if logging works
+    try:
+        protocol.comment(f"random_picks: {random_picks}")
+    except:
+        None
     
     ######################################
     # optimization picks                 #
     ######################################
     optimization_picks = validate(load_rows(protocol), lowest=4)    # source = well_plate_1, not here defined yet, picks 4 with lowest phenylalanine fluorescence readout
+
+    # fourth try to test if logging works for optimization picks
+    try:
+        protocol.comment(f"optimization_picks: {optimization_picks}")
+    except:
+        None
 
     # Load Modules:
     heater_shaker_module_1 = protocol.load_module("heaterShakerModuleV1", "10")
