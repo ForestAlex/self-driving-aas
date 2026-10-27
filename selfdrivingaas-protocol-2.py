@@ -66,7 +66,7 @@ def validate(rows, lowest=4):
             raise ValueError(f"Unexpected header {columns}, expected {EXPECTED_HEADER}")
         errors, parsed = [], []
     except:
-        errors, parsed = "Cannot read csv header (perhaps encoding problem).", []
+        errors, parsed = "Cannot read csv header (perhaps UTF problem).", []
 
     # second try except to see if my logical code works well (e.g. if the plate reader gives out something like "UNDER" we would fail)
     try:
@@ -166,7 +166,7 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
     )
 
     # Load Pipettes:
-    pipette_left = protocol.load_instrument("p20_single_gen2", "left")
+    pipette_left = protocol.load_instrument("p20_single_gen2", "right")      # changed to pipette right
 
     # Define Liquids:
     liquid_1 = protocol.define_liquid(
@@ -627,7 +627,15 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
                         },
                         "speed": 125,
                         "touch_tip": {"enabled": False},
-                        "blowout": {"enabled": False},
+                        "blowout": {
+                            "enabled": True,
+                            "location": "destination",
+                            "flow_rate": 10,
+                            "blowout_position": {
+                                "offset": {"x": 0, "y": 0, "z": 1},
+                                "position_reference": "well-top",
+                            },
+                        },
                     },
                     "correction_by_volume": [(0, 0)],
                     "push_out_by_volume": [(0, 0)],
@@ -641,7 +649,7 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
     # Step 2: transfer
     pipette_left.transfer_with_liquid_class(
         volume=2,
-        source=[well_plate_1[random_picks[0]]],  # add first random choice
+        source=[well_plate_1[optimization_picks[0]]],  
         dest=[well_plate_2["A1"]],
         new_tip="always",
         trash_location=protocol.fixed_trash,
@@ -703,7 +711,15 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
                         },
                         "speed": 125,
                         "touch_tip": {"enabled": False},
-                        "blowout": {"enabled": False},
+                        "blowout": {
+                            "enabled": True,
+                            "location": "destination",
+                            "flow_rate": 10,
+                            "blowout_position": {
+                                "offset": {"x": 0, "y": 0, "z": 1},
+                                "position_reference": "well-top",
+                            },
+                        },
                     },
                     "correction_by_volume": [(0, 0)],
                     "push_out_by_volume": [(0, 1)],
@@ -717,7 +733,7 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
     # Step 3: transfer
     pipette_left.transfer_with_liquid_class(
         volume=2,
-        source=[well_plate_1[random_picks[1]]],  # second choice
+        source=[well_plate_1[optimization_picks[1]]],  
         dest=[well_plate_2["A2"]],
         new_tip="always",
         trash_location=protocol.fixed_trash,
@@ -779,7 +795,15 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
                         },
                         "speed": 125,
                         "touch_tip": {"enabled": False},
-                        "blowout": {"enabled": False},
+                        "blowout": {
+                            "enabled": True,
+                            "location": "destination",
+                            "flow_rate": 10,
+                            "blowout_position": {
+                                "offset": {"x": 0, "y": 0, "z": 1},
+                                "position_reference": "well-top",
+                            },
+                        },
                     },
                     "correction_by_volume": [(0, 0)],
                     "push_out_by_volume": [(0, 1)],
@@ -793,7 +817,7 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
     # Step 4: transfer
     pipette_left.transfer_with_liquid_class(
         volume=2,
-        source=[well_plate_1[random_picks[2]]],  # third choice
+        source=[well_plate_1[optimization_picks[2]]],  
         dest=[well_plate_2["A3"]],
         new_tip="always",
         trash_location=protocol.fixed_trash,
@@ -855,7 +879,15 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
                         },
                         "speed": 125,
                         "touch_tip": {"enabled": False},
-                        "blowout": {"enabled": False},
+                        "blowout": {
+                            "enabled": True,
+                            "location": "destination",
+                            "flow_rate": 10,
+                            "blowout_position": {
+                                "offset": {"x": 0, "y": 0, "z": 1},
+                                "position_reference": "well-top",
+                            },
+                        },
                     },
                     "correction_by_volume": [(0, 0)],
                     "push_out_by_volume": [(0, 1)],
@@ -869,7 +901,7 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
     # Step 5: transfer
     pipette_left.transfer_with_liquid_class(
         volume=2,
-        source=[well_plate_1[random_picks[3]]],     # fourth choice 
+        source=[well_plate_1[optimization_picks[3]]],      
         dest=[well_plate_2["A4"]],
         new_tip="always",
         trash_location=protocol.fixed_trash,
@@ -931,7 +963,15 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
                         },
                         "speed": 125,
                         "touch_tip": {"enabled": False},
-                        "blowout": {"enabled": False},
+                        "blowout": {
+                            "enabled": True,
+                            "location": "destination",
+                            "flow_rate": 10,
+                            "blowout_position": {
+                                "offset": {"x": 0, "y": 0, "z": 1},
+                                "position_reference": "well-top",
+                            },
+                        },
                     },
                     "correction_by_volume": [(0, 0)],
                     "push_out_by_volume": [(0, 1)],
@@ -945,7 +985,7 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
     # Step 6: transfer
     pipette_left.transfer_with_liquid_class(
         volume=2,
-        source=[well_plate_1[random_picks[4]]],    # fifth choice
+        source=[well_plate_1[random_picks[0]]],    # fifth choice
         dest=[well_plate_2["A5"]],
         new_tip="always",
         trash_location=protocol.fixed_trash,
@@ -1007,7 +1047,15 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
                         },
                         "speed": 125,
                         "touch_tip": {"enabled": False},
-                        "blowout": {"enabled": False},
+                        "blowout": {
+                            "enabled": True,
+                            "location": "destination",
+                            "flow_rate": 10,
+                            "blowout_position": {
+                                "offset": {"x": 0, "y": 0, "z": 1},
+                                "position_reference": "well-top",
+                            },
+                        },
                     },
                     "correction_by_volume": [(0, 0)],
                     "push_out_by_volume": [(0, 1)],
@@ -1021,7 +1069,7 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
     # Step 7: transfer
     pipette_left.transfer_with_liquid_class(
         volume=2,
-        source=[well_plate_1[random_picks[5]]],     # sixth choice
+        source=[well_plate_1[random_picks[1]]],     # second choice
         dest=[well_plate_2["A6"]],
         new_tip="always",
         trash_location=protocol.fixed_trash,
@@ -1083,7 +1131,15 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
                         },
                         "speed": 125,
                         "touch_tip": {"enabled": False},
-                        "blowout": {"enabled": False},
+                        "blowout": {
+                            "enabled": True,
+                            "location": "destination",
+                            "flow_rate": 10,
+                            "blowout_position": {
+                                "offset": {"x": 0, "y": 0, "z": 1},
+                                "position_reference": "well-top",
+                            },
+                        },
                     },
                     "correction_by_volume": [(0, 0)],
                     "push_out_by_volume": [(0, 1)],
@@ -1097,7 +1153,7 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
     # Step 8: transfer
     pipette_left.transfer_with_liquid_class(
         volume=2,
-        source=[well_plate_1[optimization_picks[0]]],
+        source=[well_plate_1[random_picks[2]]],   # third choice
         dest=[well_plate_2["A7"]],
         new_tip="always",
         trash_location=protocol.fixed_trash,
@@ -1159,7 +1215,15 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
                         },
                         "speed": 125,
                         "touch_tip": {"enabled": False},
-                        "blowout": {"enabled": False},
+                        "blowout": {
+                            "enabled": True,
+                            "location": "destination",
+                            "flow_rate": 10,
+                            "blowout_position": {
+                                "offset": {"x": 0, "y": 0, "z": 1},
+                                "position_reference": "well-top",
+                            },
+                        },
                     },
                     "correction_by_volume": [(0, 0)],
                     "push_out_by_volume": [(0, 1)],
@@ -1173,7 +1237,7 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
     # Step 9: transfer
     pipette_left.transfer_with_liquid_class(
         volume=2,
-        source=[well_plate_1[optimization_picks[1]]],
+        source=[well_plate_1[random_picks[3]]],    # fourth choice
         dest=[well_plate_2["A8"]],
         new_tip="always",
         trash_location=protocol.fixed_trash,
@@ -1235,7 +1299,15 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
                         },
                         "speed": 125,
                         "touch_tip": {"enabled": False},
-                        "blowout": {"enabled": False},
+                        "blowout": {
+                            "enabled": True,
+                            "location": "destination",
+                            "flow_rate": 10,
+                            "blowout_position": {
+                                "offset": {"x": 0, "y": 0, "z": 1},
+                                "position_reference": "well-top",
+                            },
+                        },
                     },
                     "correction_by_volume": [(0, 0)],
                     "push_out_by_volume": [(0, 1)],
@@ -1249,7 +1321,7 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
     # Step 10: transfer
     pipette_left.transfer_with_liquid_class(
         volume=2,
-        source=[well_plate_1[optimization_picks[2]]],
+        source=[well_plate_1[random_picks[4]]],        # fifth choice
         dest=[well_plate_2["A9"]],
         new_tip="always",
         trash_location=protocol.fixed_trash,
@@ -1311,7 +1383,15 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
                         },
                         "speed": 125,
                         "touch_tip": {"enabled": False},
-                        "blowout": {"enabled": False},
+                        "blowout": {
+                            "enabled": True,
+                            "location": "destination",
+                            "flow_rate": 10,
+                            "blowout_position": {
+                                "offset": {"x": 0, "y": 0, "z": 1},
+                                "position_reference": "well-top",
+                            },
+                        },
                     },
                     "correction_by_volume": [(0, 0)],
                     "push_out_by_volume": [(0, 1)],
@@ -1325,7 +1405,7 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
     # Step 11: transfer
     pipette_left.transfer_with_liquid_class(
         volume=2,
-        source=[well_plate_1[optimization_picks[3]]],
+        source=[well_plate_1[random_picks[5]]],       # fifth choice
         dest=[well_plate_2["A10"]],
         new_tip="always",
         trash_location=protocol.fixed_trash,
@@ -1387,7 +1467,15 @@ def run(protocol: protocol_api.ProtocolContext) -> None:
                         },
                         "speed": 125,
                         "touch_tip": {"enabled": False},
-                        "blowout": {"enabled": False},
+                        "blowout": {
+                            "enabled": True,
+                            "location": "destination",
+                            "flow_rate": 10,
+                            "blowout_position": {
+                                "offset": {"x": 0, "y": 0, "z": 1},
+                                "position_reference": "well-top",
+                            },
+                        },
                     },
                     "correction_by_volume": [(0, 0)],
                     "push_out_by_volume": [(0, 1)],
